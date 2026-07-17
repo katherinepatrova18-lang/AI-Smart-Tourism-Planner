@@ -1,0 +1,74 @@
+:root {
+  --color-dark-navy: #0F172A;
+  --color-blue: #1E40AF;
+  --color-bright-blue: #3B82F6;
+  --color-cyan: #06B6D4;
+  --color-white: #F8FAFC;
+  --color-gray-dark: #1e293b;
+  --color-gray-light: #e2e8f0;
+  --transition: all 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--color-dark-navy);
+  color: var(--color-white);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-dark-navy);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-bright-blue);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-cyan);
+}
+
+/* Selection */
+::selection {
+  background-color: var(--color-bright-blue);
+  color: var(--color-white);
+}
