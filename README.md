@@ -2,37 +2,19 @@
 
 A futuristic, AI-powered travel planning platform built with MERN stack (MongoDB, Express, React, Node.js).
 
-## Features
+## 🌟 Features
 
-- 🤖 AI-powered trip planning
-- 🏨 Hotel finder and booking
-- 💰 Smart budget estimator
-- 🗺️ Smart route optimization
-- ⭐ User reviews and ratings
-- 📸 Image gallery for destinations
-- 🌤️ Weather integration
-- 🍽️ Food recommendations
-- 👨‍💼 Admin dashboard
-- 🔐 Secure JWT authentication
+- 🤖 **AI-powered Trip Planning** - Get personalized itineraries based on your preferences
+- 🏨 **Smart Hotel Finder** - Search and book hotels with advanced filtering
+- 💰 **Budget Estimator** - Calculate and optimize your travel expenses
+- 🗺️ **Route Optimization** - Find the best travel routes
+- ⭐ **Reviews & Ratings** - Read authentic traveler experiences
+- 📸 **Image Gallery** - Explore stunning destination photos
+- 🔐 **Secure Authentication** - JWT + Crypto-based password hashing
+- 📱 **Responsive Design** - Works seamlessly on all devices
+- ✨ **Premium UI** - Modern glassmorphism design with smooth animations
 
-## Tech Stack
-
-**Frontend:**
-- React.js with Vite
-- React Router DOM
-- Axios
-- Framer Motion
-- CSS3 with Glassmorphism
-
-**Backend:**
-- Node.js
-- Express.js
-- MongoDB
-- Mongoose ODM
-- JWT Authentication
-- Node.js Crypto module
-
-## Installation
+## 🚀 Quick Start
 
 ### Prerequisites
 - Node.js (v14+)
@@ -41,121 +23,175 @@ A futuristic, AI-powered travel planning platform built with MERN stack (MongoDB
 
 ### Setup
 
-1. Clone the repository
-```bash
-git clone https://github.com/katherinepatrova18-lang/AI-Smart-Tourism-Planner.git
-cd AI-Smart-Tourism-Planner
-```
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/katherinepatrova18-lang/AI-Smart-Tourism-Planner.git
+   cd AI-Smart-Tourism-Planner
+   ```
 
-2. Install root dependencies
-```bash
-npm install
-```
+2. **Install dependencies**
+   ```bash
+   npm install
+   cd server && npm install
+   cd ../client && npm install
+   ```
 
-3. Setup Backend
-```bash
-cd server
-npm install
-```
+3. **Configure Environment**
+   - Create `.env` in `server/` directory
+   - Add MongoDB URI and JWT secret
+   - See `SETUP.md` for detailed configuration
 
-Create `.env` file in `server/` directory:
-```
-MONGODB_URI=mongodb://localhost:27017/tourism-planner
-JWT_SECRET=your_jwt_secret_key
-PORT=5000
-NODE_ENV=development
-```
+4. **Run the Application**
+   ```bash
+   # From root directory
+   npm run dev
+   ```
 
-4. Setup Frontend
-```bash
-cd ../client
-npm install
-```
+   - Frontend: http://localhost:5173
+   - Backend: http://localhost:5000
 
-## Running the Application
+## 📚 Documentation
 
-### Development Mode (Both Frontend & Backend)
-```bash
-npm run dev
-```
+See [SETUP.md](./SETUP.md) for detailed setup instructions and API documentation.
 
-- Frontend: http://localhost:5173
-- Backend: http://localhost:5000
-
-### Running separately
-
-**Backend only:**
-```bash
-npm run server
-```
-
-**Frontend only:**
-```bash
-npm run client
-```
-
-## Project Structure
+## 🏗️ Project Structure
 
 ```
 root/
-├── server/              # Backend
+├── server/              # Backend (Node.js + Express)
 │   ├── config/
 │   ├── middleware/
 │   ├── models/
 │   ├── controllers/
 │   ├── routes/
 │   ├── services/
-│   ├── uploads/
 │   └── server.js
-├── client/              # Frontend
+├── client/              # Frontend (React + Vite)
 │   ├── src/
-│   ├── public/
-│   ├── vite.config.js
-│   └── package.json
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   ├── context/
+│   │   ├── styles/
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   └── vite.config.js
 └── package.json
 ```
 
-## API Endpoints
+## 🎨 Design System
 
-### Authentication
-- `POST /api/auth/signup` - Register user
-- `POST /api/auth/login` - Login user
-
-### Destinations
-- `GET /api/destinations` - Get all destinations
-- `POST /api/destinations` - Create destination (Admin)
-- `PUT /api/destinations/:id` - Update destination (Admin)
-- `DELETE /api/destinations/:id` - Delete destination (Admin)
-
-### Hotels
-- `GET /api/hotels` - Get all hotels
-- `GET /api/hotels/:id` - Get hotel details
-- `POST /api/hotels` - Create hotel (Admin)
-- `PUT /api/hotels/:id` - Update hotel (Admin)
-- `DELETE /api/hotels/:id` - Delete hotel (Admin)
-
-### Trips
-- `POST /api/trips` - Create trip
-- `GET /api/trips/user/:id` - Get user trips
-- `PUT /api/trips/:id` - Update trip
-- `DELETE /api/trips/:id` - Delete trip
-
-### Reviews
-- `POST /api/reviews` - Add review
-- `GET /api/reviews` - Get all reviews
-
-### Bookings
-- `POST /api/bookings` - Create booking
-- `GET /api/bookings/user/:id` - Get user bookings
-
-## Color Palette
-
+**Color Palette:**
 - Dark Navy: `#0F172A`
 - Blue: `#1E40AF`
 - Bright Blue: `#3B82F6`
 - Cyan: `#06B6D4`
 - White: `#F8FAFC`
 
-## License
+**Features:**
+- Glassmorphism Cards
+- Gradient Backgrounds
+- Smooth Animations (Framer Motion)
+- Responsive Grid System
+- Modern Typography
 
-ISC
+## 🔐 Security
+
+- **Password Hashing**: Node.js Crypto module (PBKDF2)
+- **Authentication**: JWT tokens
+- **Protected Routes**: Client-side route protection
+- **CORS**: Configured for development
+
+## 📱 Responsive Breakpoints
+
+- Mobile: < 768px
+- Tablet: 768px - 1024px
+- Desktop: > 1024px
+
+## 🛠️ Tech Stack
+
+**Frontend:**
+- React 18
+- Vite (Build tool)
+- React Router DOM
+- Axios (HTTP client)
+- Framer Motion (Animations)
+- React Icons
+
+**Backend:**
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose ODM
+- JWT (Authentication)
+- Multer (File upload)
+
+## 📊 API Endpoints
+
+### Authentication
+- `POST /api/auth/signup`
+- `POST /api/auth/login`
+
+### Destinations
+- `GET /api/destinations`
+- `GET /api/destinations/:id`
+- `GET /api/destinations/popular`
+
+### Hotels
+- `GET /api/hotels`
+- `GET /api/hotels/:id`
+
+### Trips
+- `POST /api/trips`
+- `GET /api/trips/user/:userId`
+- `PUT /api/trips/:id`
+
+### Budgets
+- `POST /api/budgets`
+- `GET /api/budgets/user/:userId`
+
+### Reviews
+- `POST /api/reviews`
+- `GET /api/reviews`
+
+### Bookings
+- `POST /api/bookings`
+- `GET /api/bookings/user/:userId`
+
+## 🎯 Features Implemented
+
+✅ User Authentication with JWT
+✅ Crypto-based Password Hashing
+✅ Dynamic Destination Explorer
+✅ Hotel Finder with Filters
+✅ AI Trip Planner
+✅ Smart Budget Calculator
+✅ Reviews and Ratings System
+✅ Booking System
+✅ User Profile Management
+✅ Favorites System
+✅ Trip Saving
+✅ Image Upload
+✅ Weather Integration
+✅ Food Recommendations
+✅ Statistics Dashboard
+✅ Admin Controls
+✅ Responsive Design
+✅ Glassmorphism UI
+✅ Smooth Animations
+
+## 📝 License
+
+ISC License
+
+## 👨‍💻 Author
+
+Katherine Patrova
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to submit pull requests.
+
+## 📞 Support
+
+For support, please create an issue in the repository.
