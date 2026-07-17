@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { useAuth } from '../context/AuthContext';
 import { useUI } from '../context/UIContext';
-import { updateUserProfile } from '../services/api';
 import '../styles/components.css';
 
 const Profile = () => {
@@ -40,8 +40,8 @@ const Profile = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      const response = await updateUserProfile(formData);
-      updateUser(response.data.user);
+      // Mock update - no API call needed
+      updateUser(formData);
       addNotification('Profile updated successfully!', 'success');
     } catch (error) {
       addNotification('Error updating profile', 'error');

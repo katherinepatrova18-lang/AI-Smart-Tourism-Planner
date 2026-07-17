@@ -116,6 +116,65 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Navigation Headings Section */}
+      <section className="section">
+        <div className="container">
+          <div className="grid grid-4" style={{ gap: '20px' }}>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="glass-card"
+              style={{ cursor: 'pointer', textAlign: 'center' }}
+              onClick={() => navigate('/explore')}
+            >
+              <h3 style={{ fontSize: '2rem', marginBottom: '10px' }}>🏠</h3>
+              <h4 style={{ fontWeight: 'bold', marginBottom: '8px' }}>Home</h4>
+              <p style={{ color: 'rgba(248, 250, 252, 0.6)', fontSize: '0.9rem' }}>Explore our featured collections</p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="glass-card"
+              style={{ cursor: 'pointer', textAlign: 'center' }}
+              onClick={() => navigate('/explore')}
+            >
+              <h3 style={{ fontSize: '2rem', marginBottom: '10px' }}>🌍</h3>
+              <h4 style={{ fontWeight: 'bold', marginBottom: '8px' }}>Destinations</h4>
+              <p style={{ color: 'rgba(248, 250, 252, 0.6)', fontSize: '0.9rem' }}>Discover amazing places</p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="glass-card"
+              style={{ cursor: 'pointer', textAlign: 'center' }}
+              onClick={() => navigate('/ai-planner')}
+            >
+              <h3 style={{ fontSize: '2rem', marginBottom: '10px' }}>⭐</h3>
+              <h4 style={{ fontWeight: 'bold', marginBottom: '8px' }}>Features</h4>
+              <p style={{ color: 'rgba(248, 250, 252, 0.6)', fontSize: '0.9rem' }}>Powerful planning tools</p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              className="glass-card"
+              style={{ cursor: 'pointer', textAlign: 'center' }}
+              onClick={() => navigate('/explore')}
+            >
+              <h3 style={{ fontSize: '2rem', marginBottom: '10px' }}>💬</h3>
+              <h4 style={{ fontWeight: 'bold', marginBottom: '8px' }}>Reviews</h4>
+              <p style={{ color: 'rgba(248, 250, 252, 0.6)', fontSize: '0.9rem' }}>Real traveler experiences</p>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* Statistics Section */}
       <section className="section">
         <div className="container">
@@ -160,7 +219,7 @@ const Home = () => {
               {
                 icon: '💰',
                 title: 'Smart Budget Planning',
-                description: 'Optimize your travel expenses with our advanced budget estimator.
+                description: 'Optimize your travel expenses with our advanced budget estimator.'
               },
               {
                 icon: '🏨',
